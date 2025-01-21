@@ -1,0 +1,45 @@
+
+
+<div class="bg-fullscreen d-flex align-items-center justify-content-center" >
+   <div class="container min-vh-100 d-flex p-5 ">
+     <div class="row justify-content-start w-100">
+        <div class="col-9 col-md-6 col-lg-4   bg-light text-dark rounded-3 shadow-lg">
+           
+           <div class="">
+              <div class=" text-center">
+                 <img src="/assets/img/logos/nx-logo-login.png" alt="" class="img-fluid rounded mx-auto d-block">
+              </div>
+              <div>
+                 <mat-form-field appearance="outline" class="w-100">
+                    <mat-label>Usuario</mat-label>
+                    <input matInput placeholder="">
+                 </mat-form-field>
+              </div>
+              <div class="my-2">
+               <mat-form-field appearance="outline" class="w-100">
+                 <mat-label>Contraseña</mat-label>
+                 <input matInput [type]="hide ? 'password' : 'text'">
+                 <button mat-icon-button matSuffix (click)="cambio()" >
+                   <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                 </button>
+               </mat-form-field>
+              </div>
+              <div class="my-2 text-primary">
+                 <a href="#">¿Olvidaste su contraseña?</a>
+              </div>
+              <div class="my-3">
+               <div class="row justify-content-center">
+                 <div class="col-4 " >
+                   <button mat-raised-button color="primary" class="w-100 ">Ingresar</button>
+                 </div>
+               </div>
+              </div>
+              <div class="text-center text-muted">
+                 <small>Si eres estudiante de la UANL, debes ingresar a traves del portal de <a href="#">Servicios en Linea</a></small>
+              </div>
+           </div>
+        </div>
+     </div>
+   </div>  
+
+</div>

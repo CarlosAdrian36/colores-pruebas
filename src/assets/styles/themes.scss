@@ -1,0 +1,94 @@
+
+
+@use '@angular/material' as mat;
+// @import '~@angular/material/theming';
+@include mat.core();
+
+
+$my-primary-color: (
+    50: #004B93,
+    100: #367abf,
+    200: #65a2d6,
+    300: #93caed,
+    500: #0a325f,
+    700: #0a325f,
+    contrast: (
+        50: rgba(255, 255, 255, 0.87),
+        100: rgba(0, 0, 0, 0.87),
+        200: rgba(0, 0, 0, 0.87),
+        300: white,
+    )
+);
+$my-accent-color :(
+    50: #FFF1C1,  // Tono más claro
+    100: #EFB810, // Color base
+    200: #C49A0D, // Tono más oscuro del base
+    300: #947306, // Tono más oscuro
+    500: #5E4D04, // Tono aún más oscuro
+    700: #5E4D04, // Tono aún más oscuro
+    contrast: (
+        50: rgba(0, 0, 0, 0.87),    // Contraste oscuro para tonos claros
+        100: rgba(255, 255, 255, 0.87), // Contraste claro para tonos medios
+        200: rgba(255, 255, 255, 0.87), // Contraste claro para tonos oscuros
+        300: rgba(255, 255, 255, 0.87), // Contraste claro para tonos más oscuros
+    )
+);
+
+$my-palette :(
+    50: #004B93,
+    100: #EFB810,
+    200: #004B93,
+    300: #004B93,
+    700: #29fb04,
+    contrast:(
+        50: rgba(rgb(255, 255, 255), 0.87),
+        100: rgba(rgb(0, 0, 0), 0.87),
+        200: rgba(rgb(7, 179, 39), 0.87),
+        300: white,
+    )
+);
+
+$my-primary: mat.define-palette($my-primary-color,50);
+$my-accent:  mat.define-palette($my-accent-color,100);
+
+
+
+$light-theme : mat.define-light-theme(
+
+    (
+        color: (
+            primary: $my-primary,
+            accent: $my-accent,
+            warn: $my-accent
+            
+        ),
+
+        typography: mat.define-typography-config(),
+        density: 0,
+    )
+);
+
+
+$dark-theme : mat.define-dark-theme(
+    (
+        color: (
+            primary: $my-primary,
+            accent: $my-accent,
+            ),
+            
+            typography: mat.define-typography-config(),
+            density: 0,
+    ),
+);
+
+// @include angular-material-theme($light-theme);
+
+@include mat.all-component-themes($dark-theme);
+            
+@include mat.all-component-themes($light-theme);
+
+
+
+.dark-mode{
+    @include mat.all-component-colors($dark-theme)
+}

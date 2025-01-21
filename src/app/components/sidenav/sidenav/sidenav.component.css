@@ -1,0 +1,76 @@
+.tool{
+  position: fixed;
+  height: auto;
+}
+.arriba{
+    /* border: 10px solid blue; */
+    box-sizing: border-box;
+    width: 100%;
+    
+    
+  }
+
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 500px;
+    margin: 5px;
+  }
+
+  .example-container {
+    position: absolute;
+    top: 60px;
+    bottom: 1px;
+    left: 0;
+    right: 0;
+  
+    border: 1px solid #555;
+  }
+  
+  .example-sidenav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+  }
+  mat-card {
+    width: 100%;
+    max-width: 800px;
+    margin:  auto; 
+    margin-left :80px;
+    margin-bottom: 10px; 
+    border: 1px solid blue;
+    overflow: auto; /*Aparecen las barras si es necesario si el contenido se desborda */
+    text-overflow: ellipsis;
+  }
+
+  .btn{
+    margin-left: 80px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .titulo{
+    top: 30px;
+  }
+  .disponibilidad{
+    padding: 50px;
+  }
+  .close{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+
+  mat-sidenav {
+    width: 350px;
+    
+  }
+  .container1{
+    box-sizing: border-box;
+    /* margin: 10px;
+    padding: 20px; */
+    border:1px solid greenyellow;
+    position: absolute;
+    
+  }

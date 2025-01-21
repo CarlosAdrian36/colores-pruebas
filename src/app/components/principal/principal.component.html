@@ -1,0 +1,18 @@
+
+<h1>El objetivo de esto es que se pueda observar varias cosas por diferentes </h1>
+
+<!-- ssssssssssss -->
+
+
+
+
+<mat-form-field appearance="fill">
+    <mat-label>Fecha</mat-label>
+    <input matInput [matDatepicker]="picker" [readonly]="true" (click)="picker.open()">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+
+
+
+

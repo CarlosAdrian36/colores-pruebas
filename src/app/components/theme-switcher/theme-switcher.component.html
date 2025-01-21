@@ -1,0 +1,9 @@
+
+<!-- <mat-slide-toggle [(ngModel)]="isDarkActive" (ngModelChange)="onChange($event)" color="accent" ></mat-slide-toggle> -->
+
+
+<div>
+    <button mat-icon-button *ngIf="isDarkActive"  (click)="toggleDarkMode()" > <mat-icon> light_mode</mat-icon> </button>
+    <button mat-icon-button *ngIf="!isDarkActive" (click)="toggleDarkMode()"> <mat-icon> nightlight</mat-icon> </button>
+
+</div>
