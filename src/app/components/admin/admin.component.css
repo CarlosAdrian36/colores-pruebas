@@ -1,94 +1,54 @@
-.container{
-    /* background: rgb(42, 163, 244); */
-    /* border: 3px solid black; */
-    border-radius: 6px;
-    display: grid;
-    height: 580px;
-    gap: 10px;
-    /* margin-top: 15px;
-    margin-left: 15px; */
-    margin: 40px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3,1fr);
-    grid-template-areas: 
-    "c1 c2 c3"
-    "c1 c4 c4"
-    "c1 c5 c6"
-    ;
-}
-
-
-
-#cont1{
-    grid-area: c1;
-    overflow: hidden;
-    /* background: #cd0f0f; */
-    box-shadow: 0px 1px 10px rgba(0, 0, 0,0.2);
-    cursor: default;
-    transition: all 400ms ease ;
-    /* background-color: rgba(0, 0, 0, 0.2); */
-}
-.card1:hover{
-    box-shadow: 5px 5px 20px rgba(0, 0, 0,0.4);
+/* .bento-item{
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    background: rgb(214, 208, 208);
 
 }
-#cont2{
-    grid-area: c2;
-    border: 1px solid black;
+
+.bento-item:hover{
+    transform: scale(1.05);
 }
-#cont3{
-    grid-area: c3;
-}
-#cont4{
-    grid-area: c4;
+
+.bento-tall {
+    height: 95vh;
     
-}c
-#cont5{
-    grid-area: c5;
 }
-#cont6{
-    grid-area: c6;
-}
-
-@media only screen and (max-width:550px) {
-    .container{
-      grid-template-columns: 1fr;
-      grid-template-rows: 600px repeat(5,300fr);
-      grid-template-areas: 
-      "c1"
-      "c4"
-      "c2"
-      "c3"
-      "c5"
-      "c6" 
-    }
-}
+.bento-i{
+    height: 30vh;
+} */
 
 
-.parent{
-    border: 1px solid black;
-    display: grid;
-    /* height: 400px; */
-    /* box-sizing: border-box; */
-    grid-template-columns: 11px 1fr ;
-    grid-template-rows: 11px 1fr   ;
-    grid-template-areas: 
-    "a1 a2"
-    "a1 a3"
-    "a1 a4";
-    gap: 10px;
+
+/* Estilos base para los elementos bento */
+.bento-item {
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #f8f9fa; /* Color de fondo más suave */
+  border: 1px solid #dee2e6; /* Borde sutil */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
 }
-.item1{
-    grid-area: a1;
-    background: #2ECC71;
+
+/* Efecto hover */
+.bento-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada al hacer hover */
 }
-.item2{
-    grid-area: a2;
+
+/* Estilo para elementos altos */
+.bento-tall {
+  height: 95vh;
 }
-.item3{
-    grid-area: a3;
-    background: lightskyblue;
+
+/* Estilo para elementos pequeños */
+.bento-i {
+  height: 29vh;
 }
-.item4{
-    grid-area: a4;
+
+/* Mejoras adicionales */
+.container {
+  max-width: 1200px; /* Limitar el ancho máximo del contenedor */
+}
+
+.text-muted {
+  color: #6c757d !important; /* Color gris para texto secundario */
 }
